@@ -2,6 +2,7 @@ defmodule SubApp do
   @moduledoc """
   Documentation for `SubApp`.
   """
+  use Boundary, deps: []
 
   @doc """
   Hello world.

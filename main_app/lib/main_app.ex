@@ -3,6 +3,8 @@ defmodule MainApp do
   Documentation for `MainApp`.
   """
 
+  use Boundary, deps: []
+
   @doc """
   Hello world.
 
@@ -13,6 +15,7 @@ defmodule MainApp do
 
   """
   def hello do
+    SubApp.hello()
     :world
   end
 end
